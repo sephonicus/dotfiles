@@ -12,8 +12,9 @@ gd() {
   fi
 }
 alias gc="git commit -v"
+alias gcam="git commit -v --amend"
 alias gca="git add -A . && git commit -v"
-alias gcam="git add -A . && git commit -v --amend"
+alias gcaam="git add -A . && git commit -v --amend"
 alias gco="git checkout"
 alias gcop="git checkout -p"
 
