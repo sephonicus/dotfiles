@@ -1,3 +1,5 @@
+# novell.com/coolsolutions/tools/17142.html
+# stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux/
 export BLACK='\033[0;30m'
 export BLUE='\033[0;34m'
 export GREEN='\033[0;32m'
@@ -16,5 +18,6 @@ export YELLOW='\033[1;33m'
 export WHITE='\033[1;37m'
 export NC='\033[0m' # no color
 
-# www.novell.com/coolsolutions/tools/17142.html
-# stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
+# osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+export CLICOLOR=1
+export LSCOLORS=gxgxcxdxbxegedabagacad
