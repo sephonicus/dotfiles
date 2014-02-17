@@ -2,8 +2,15 @@ alias gi="git init"
 alias ga="git add"
 alias gap="git add --patch"
 alias gs="git status -sb && git stash list"
-alias gd="git diff"
 alias gsh="git show"
+gd() {
+  git diff
+  local untracked="$(git ls-files --others --exclude-standard)"
+  if [ ! -z $untracked ]; then
+    echo -e "\n${WHITE}Untracked files:${NC}"
+    echo $untracked
+  fi
+}
 alias gc="git commit -v"
 alias gca="git add -A . && git commit -v"
 alias gcam="git add -A . && git commit -v --amend"
