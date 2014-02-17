@@ -11,12 +11,21 @@ gd() {
     echo $untracked
   fi
 }
+alias gds="git diff --staged"
+alias gda='git diff HEAD'
+
 alias gc="git commit -v"
 alias gcam="git commit -v --amend"
 alias gca="git add -A . && git commit -v"
 alias gcaam="git add -A . && git commit -v --amend"
 alias gco="git checkout"
 alias gcop="git checkout -p"
+alias g!="git add -A . && git checkout -f"
+gcun() {
+  local commit_message="$(git log -n 1 HEAD 2>/dev/null)"
+  pbcopy commit_message
+  git reset --soft HEAD^ && git reset HEAD .
+}
 
 # git stashes
 alias gsl="git stash list"
