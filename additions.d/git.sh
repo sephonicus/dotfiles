@@ -1,7 +1,7 @@
 alias gi="git init"
 alias ga="git add"
 alias gap="git add --patch"
-alias gs="git status -sb && git stash list"
+alias gs="git status -s && git stash list"
 alias gsh="git show"
 gd() {
   git diff
