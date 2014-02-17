@@ -1,8 +1,11 @@
 alias gi="git init"
+
 alias ga="git add"
 alias gap="git add --patch"
+
 alias gs="git status -s && git stash list"
 alias gsh="git show"
+
 gd() {
   git diff
   local untracked="$(git ls-files --others --exclude-standard)"
@@ -18,8 +21,10 @@ alias gc="git commit -v"
 alias gcam="git commit -v --amend"
 alias gca="git add -A . && git commit -v"
 alias gcaam="git add -A . && git commit -v --amend"
+
 alias gco="git checkout"
 alias gcop="git checkout -p"
+
 alias g!="git add -A . && git checkout -f"
 gcun() {
   local commit_message="$(git log -n 1 HEAD 2>/dev/null)"
@@ -27,7 +32,6 @@ gcun() {
   git reset --soft HEAD^ && git reset HEAD .
 }
 
-# git stashes
 alias gsl="git stash list"
 g{() {
   echo -n "Name this stash (optional): "
