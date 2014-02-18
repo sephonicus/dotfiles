@@ -106,4 +106,7 @@ git_dirty_state() {
   fi
 }
 
+# ignore simple aliases
+export HISTIGNORE="gs:gc:gca:gd:gap:g^:gv:${HISTIGNORE}"
+
 # [1] github.com/hashrocket/dotmatrix/commit/d888bfee55ca430ba109e011d8b0958e810f799a
