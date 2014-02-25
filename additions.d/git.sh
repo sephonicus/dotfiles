@@ -11,9 +11,9 @@ alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%
 gd() {
   git diff
   local untracked="$(git ls-files --others --exclude-standard)"
-  if [ ! -z $untracked ]; then
+  if [ ! -z "${untracked}" ]; then
     echo -e "\n${WHITE}Untracked files:${NC}"
-    echo $untracked
+    echo "${untracked}"
   fi
 }
 alias gds="git diff --staged"
