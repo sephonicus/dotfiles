@@ -2,9 +2,10 @@
 export HISTFILESIZE=10000
 export HISTSIZE=${HISTFILESIZE}
 
-# only record a single entry when consecutive usages of the same command occur
-# ignore commands preceded by a space (useful for anything sensitive)
-export HISTCONTROL=ignoredups:ignorespace
+# ignoreboth does ignoredups (1) and ignorespace (2)
+# 1 only record a single entry when consecutive usages of the same command occur
+# 2 ignore commands preceded by a space (useful for anything sensitive)
+export HISTCONTROL=ignoreboth
 
 # ignore certain commands, particularly those easily retyped
 #   will only filter out the exact call, not those with differing arguments
