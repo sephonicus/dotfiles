@@ -1,3 +1,4 @@
+alias gcl="git clone"
 alias gi="git init"
 
 alias ga="git add"
