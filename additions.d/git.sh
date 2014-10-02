@@ -10,7 +10,7 @@ alias gsh="git show"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
 
 gd() {
-  git diff
+  git diff "$@"
   local untracked="$(git ls-files --others --exclude-standard)"
   if [ ! -z "${untracked}" ]; then
     echo -e "\n${WHITE}Untracked files:${NC}"
