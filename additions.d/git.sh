@@ -6,6 +6,7 @@ alias gap="git add --patch"
 
 alias gs="git status -s && git stash list"
 alias gsh="git show"
+alias gb="git branch"
 
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
 
