@@ -28,6 +28,7 @@ alias gcaam="git add -A . && git commit -v --amend"
 
 alias gco="git checkout"
 alias gcop="git checkout -p"
+alias gm="git checkout master"
 
 alias g!="git add -A . && git checkout -f"
 gcun() {
