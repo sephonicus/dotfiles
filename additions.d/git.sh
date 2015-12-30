@@ -48,6 +48,11 @@ g{() {
 }
 alias g}='git stash pop'
 
+# make a stash of the current uncommitted changes
+alias gsnap="git stash -u && git stash apply"
+# nuke all uncommitted changes
+alias gnuke="git add -A && git checkout -f"
+
 alias g^="git push origin HEAD"
 alias gv="git pull --rebase"
 
