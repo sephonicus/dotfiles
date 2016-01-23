@@ -5,6 +5,7 @@ alias ga="git add"
 alias gap="git add --patch"
 
 alias gs="git status -s && git stash list"
+alias gss="git stash show -p"
 alias gsh="git show"
 alias gb="git branch"
 
