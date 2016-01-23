@@ -14,13 +14,6 @@ export HISTIGNORE="history:ls:${HISTIGNORE}"
 # display time each command was executed when viewing command history
 export HISTTIMEFORMAT='%b %d %H:%M: '
 
-# write to history immediately rather than at end of session
-#   this way, opening a new tab will start with commands from all existing terms
-export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
-
-# append to, rather than overwrite, the history file
-shopt -s histappend
-
 # represent commands entered on multiple lines as a single line in the history
 shopt -s cmdhist
 
