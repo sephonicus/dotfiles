@@ -15,7 +15,7 @@ gd() {
   git diff "$@"
   local untracked="$(git ls-files --others --exclude-standard)"
   if [ ! -z "${untracked}" ]; then
-    echo -e "\n${WHITE}Untracked files:${NC}"
+    echo -e "\n${EWHITE}Untracked files:${ERESET}"
     echo "${untracked}"
   fi
 }
