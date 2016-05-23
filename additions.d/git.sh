@@ -10,6 +10,7 @@ alias gsh="git show"
 alias gb="git branch"
 
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glh="gl | head"
 
 gd() {
   git diff "$@"
